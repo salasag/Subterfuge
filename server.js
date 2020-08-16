@@ -3,7 +3,8 @@ const http = require("http");
 const path = require('path');
 const socketIo = require("socket.io");
 
-const port = process.env.PORT || 5000;
+// const port = process.env.PORT || 5000;
+const port = 5000;
 // const index = require("./routes/index");
 const LobbyManager = require("./Lobby/LobbyManager.js");
 
