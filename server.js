@@ -3,11 +3,11 @@ const http = require("http");
 const socketIo = require("socket.io");
 
 const port = process.env.PORT || 5000;
-const index = require("./routes/index");
+// const index = require("./routes/index");
 const LobbyManager = require("./Lobby/LobbyManager.js");
 
 const app = express();
-app.use(index);
+// app.use(index);
 
 const server = http.createServer(app);
 
