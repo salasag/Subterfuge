@@ -3,8 +3,7 @@ const http = require("http");
 const path = require('path');
 const socketIo = require("socket.io");
 
-// const port = process.env.PORT || 5000;
-const port = 5000;
+const port = process.env.PORT || 5000;
 // const index = require("./routes/index");
 const LobbyManager = require("./Lobby/LobbyManager.js");
 
@@ -23,8 +22,6 @@ if (process.env.NODE_ENV === 'production') {
 app.use(express.static(path.join(__dirname, 'client/public')));
 // Handle React routing, return all requests to React app
 app.get('*', function(req, res) {
-    console.log("PAATHHH")
-    console.log(path.join(__dirname, 'client/public', 'index.html'))
     res.sendFile(path.join(__dirname, 'client/public', 'index.html'));
 });
 }
