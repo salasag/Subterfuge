@@ -1,3 +1,3 @@
 web: npm start
 web: cd client && npm start
-web: ls
+web: cd client && ls
